@@ -74,6 +74,7 @@ while False in matches('universities'):
                             university_gs[current_match]['matched'] = False
                             university_gs[current_match]['match'] = ''
 
-print "Matchings:"
+print "Matchings".center(52)
+print '-' * 52
 for university in omniscient_ranking:
-    print university.ljust(30), "matched with", university_gs[university]['match']
+    print university.rjust(26), "matched with", university_gs[university]['match']
